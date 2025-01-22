@@ -18,7 +18,7 @@ Setup Instructions
 
 4. Enter:
    ```
-   minikube apply -k ./
+   kubectl apply -k ./
    ```
 5. Open a new terminal. To mount your files for your application, containing your index.php others, enter:
    ```
@@ -45,13 +45,13 @@ Setup Instructions
     kubectl apply -f lamp.yaml
     kubectl apply -k ./
     ```
-10. Verify your pods are running:
-    ```
-    kubectl get pods
-    ```
 11. Load the docker image into minikube
     ```
     minikube image load progress-webapp
+    ```
+11. Verify your pods are running:
+    ```
+    kubectl get pods
     ```
 12. Launch the local LAMP service:
     ```
