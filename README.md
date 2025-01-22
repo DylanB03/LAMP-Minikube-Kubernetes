@@ -9,10 +9,10 @@ Setup Instructions
    ```
    minikube start
    ```
-This will launch minicube. If you have launched minikube in the past you must run the following code before minikube start:
-```
-minikube delete
-```
+   This will launch minicube. If you have launched minikube in the past you must run the following code before minikube start:
+   ```
+   minikube delete
+   ```
 
 3. In the kustomization.yaml file, you can edit the password to be anything you want
 
