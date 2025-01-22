@@ -24,13 +24,13 @@ Setup Instructions
    ```
    minikube mount /ABSOLUTEDIRECTORYOFYOURFOLDER/LAMP-Minikube-Kubernetes:/mnt/data
    ```
-6. Enter a bash terminal
+6. Enter a bash terminal and build the docker file. If wanted, you can change progress-webapp to something more suiting of your application, but you need to also change the container image in lamp.yaml to match
    ```
    bash
    ```
    ```
    eval $(minikube docker-env)
-   docker build -t projects-webapp .
+   docker build -t progress-webapp .
    ```
 7. You can verify the docker build worked by checking for projects-webapp in:
    ```
