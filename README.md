@@ -49,8 +49,12 @@ Setup Instructions
     ```
     kubectl get pods
     ```
-11. Launch the local LAMP service:
+11. Load the docker image into minikube
+    ```
+    minikube image load progress-webapp
+    ```
+12. Launch the local LAMP service:
     ```
     minikube service lamp
     ```
-12. Congratulations, you have a working LAMP stack using kubernetes with 1 node and 2 pods. The contents of the /files folder should be your individual application. Off download, it will contain my own web app but you should change it to your own.
+13. Congratulations, you have a working LAMP stack using kubernetes with 1 node and 2 pods. The contents of the /files folder should be your individual application. Off download, it will contain my own web app but you should change it to your own.
